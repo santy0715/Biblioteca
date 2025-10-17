@@ -263,6 +263,13 @@ public class InventarioLibreria {
         }
     }
 
+    // Libros por defecto
+
+    public static void cargarLibrosPorDefecto() {
+        inventario.add(new Libro("Cien Años de Soledad", "Gabriel García Márquez", "ISBN001", 5));
+        inventario.add(new Libro("1984", "George Orwell", "ISBN002", 2));
+        inventario.add(new Libro("El Principito", "Antoine de Saint-Exupéry", "ISBN003", 10));
+    }
 
     // Guardar inventario en archivo
 
@@ -276,13 +283,5 @@ public class InventarioLibreria {
             System.out.println("Error guardando archivo de inventario: " + e.getMessage());
         }
     }
-
-
-    // Libros por defecto
-
-    public static void cargarLibrosPorDefecto() {
-        inventario.add(new Libro("Cien Años de Soledad", "Gabriel García Márquez", "ISBN001", 5));
-        inventario.add(new Libro("1984", "George Orwell", "ISBN002", 2));
-        inventario.add(new Libro("El Principito", "Antoine de Saint-Exupéry", "ISBN003", 10));
-    }
+    
 }
